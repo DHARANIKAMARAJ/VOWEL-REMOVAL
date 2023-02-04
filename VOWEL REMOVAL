@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int t,h;
+    char a[50];
+    scanf("%s",a);
+    for(t=0,h=0;a[t]!='\0';t++)
+    {
+        if(!(a[t]=='a'||a[t]=='e'||a[t]=='i'||a[t]=='o'||a[t]=='u'||a[t]=='A'||a[t]=='E'||a[t]=='I'||a[t]=='O'||a[t]=='U'))
+        {
+            a[h]=a[t];
+            h++;
+        }
+    }
+    a[h]='\0';
+    printf("%s",a);
+}
